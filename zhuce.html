@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<script src="js/jquery-1.11.3.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header">
+			<a href="#">
+				<img src="images/img-registor/logo.png" border="0"/>
+				<span>欢迎注册</span>
+			</a>
+		</div>
+		<!--reg_main-->
+		<div class="tabBox clear">
+			<span id="regper" class="reg_hide reg_show regMr5">个人用户</span>
+			<span id="regcom" class="reg_hide" style="">企业用户</span>
+			<div class="login">
+				已有账号，立即<a href="login.html">登录</a>
+			</div>
+		</div>
+		<!--个人用户-->
+		<div id="perDiv" class="reg_main reg_border regTab" style="display: block;">
+			<ul class="individualUserBg">
+				<form id="regForm_mod" method="post">
+					<li class="regMb30">
+						<label>
+							<font>*</font>
+							账户名：
+						</label>
+						<span class="regM defaultBorder">
+							<input id="userMam" name="userMam" class="regInput" maxlength="80" type="text" />
+							<em></em>
+						</span>
+						<span id="userMamErr" class="regInput"></span>
+					</li>
+					<li>
+						<label>
+							<font>*</font>
+							登录密码：
+						</label>
+						<span class="regM defaultBorder">
+							<input id="password" class="regInput" name="password" type="password"/>
+							<em></em>
+						</span>
+						<span id="passwordErr" class="regInput" ></span>
+					</li>
+					<li id="pwdStrong" class="safetyLayer regPl191">
+						<font style="font-size:12px">安全程度</font>
+						<em class="default em1">弱</em>
+						<em class="default em2">中</em>
+						<em class="default em3">强</em>
+					</li>
+					<li class="regMb30">
+						<label>
+							<font>*</font>
+							确认密码：
+						</label>
+						<span class="regM defaultBorder">
+							<input id="password2" class="regInput" name="password2" type="password"/>
+							<em></em>
+						</span>
+						<span id="password2Err" class="regInput" ></span>
+					</li>
+					<li id="yzcode_3" class="regMb30">
+						<label>
+							<font>*</font>
+							验证码：
+						</label>
+						<input id="auth_code" class="regCodeInput defaultBorder" name="auth_code" type="text"/>
+						<em></em>
+						<img id="code_img1" class="floatleft regMl6" src="images/img-registor/bg01.jpg" alt="看不清?点一下!" title="看不清?点一下!" border="0" width="106" height="36"/>
+						<span class="codeTitle floatleft regM16">
+							看不清？<a id="huan" href="javascript:;">换一换</a>
+						</span>
+						<span id="auth_codeErr" class="reg_error"></span>
+					</li>
+					<li id="yzcode_2" class="regMb30" style="display: none;"></li>
+					<li id="yqmc" class="regMb30" style="display: none;">
+						<label>
+							<font></font>
+							邀请码：
+						</label>
+						<input id="dm_number" class="regInvitationInput defaultBorder floatleft" name="dm_number" type="text"/>
+						<em></em>
+						<a class="regInvitationLink floatleft" target="_blank" href="#" style="line-height: 36px;">什么是邀请码</a>
+						<span id="dm_numberErr"></span>
+					</li>
+					<li class="regPl88">
+						<span class="regM" style="margin-left:29px;">
+							<input id="AgreeId" name="AgreeId" checked="" type="checkbox"/>
+							<a class="checkTitle">
+								我已阅读并同意
+								<font style="font-size:12px">《顺丰优选用户注册协议》</font>
+							</a>
+						</span>
+						<span id="AgreeIdErr"></span>
+					</li>
+					<li id="sub_per" class="register regPl88 regMt10" style="margin-left:29px;">
+						<input id="tjuid" name="tjuid" value="" type="hidden"/>
+						<a id="reg_per_data" class="registerNow" href="javascript:;">立即注册</a>
+					</li>
+					<br />
+					<br />
+				</form>
+			</ul>
+			<div class="ui-reg-tip">
+				<a href="#" target="_blank">了解更多</a>
+			</div>
+		</div>
+		<!--企业用户-->
+		<div id="comDiv" class="reg_main reg_border regTab" style="display: none;">
+			<ul class="enterpriseUsers">
+				<em style="color:red;font-size: 15px;">企业用户注册维护中，暂时不可用</em>
+      			 <form id="regForm_cpy" name="regForm_cpy" method="post">
+	
+	            <li class="accountTitle "> 账户信息 </li>
+	
+	            <li class="regMb30 regMt18">
+	                <label><font>*</font> 账户名：</label>
+	            <span class="regM defaultBorder">
+					<input id="cpyusername" name="cpyusername" class="regInput" type="text">
+	            	<em></em>
+	            </span>
+	                <span id="cpyusernameErr"></span>
+	            </li>
+	
+	            <li class="regMb30">
+	                <label><font>*</font> 登录密码：</label>
+	            <span class="regM defaultBorder">
+					<input id="cpypwd" name="cpypwd" class="regInput"  type="password">
+					<em></em>
+	            </span>
+	                <span id="cpypwdErr"></span>
+	            </li>
+	
+	            <li class="regMb30">
+	                <label><font>*</font> 确认密码：</label>
+	            <span class="regM defaultBorder">
+	            	 <input id="cpypwd2" name="cpypwd2" class="regInput"  type="password">
+					<em></em>
+	            </span>
+	                <span id="cpypwd2Err"></span>
+	            </li>
+	
+	
+	            <li class="accountTitle "> 联系人信息 </li>
+	
+	
+	            <li class="regMb30 regMt18">
+	                <label><font>*</font> 联系人姓名：</label>
+	            <span class="regM defaultBorder">
+					<input id="cpyrealname" name="cpyrealname" class="regInput" realName();" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpyrealnameErr"></span>
+	            </li>
+	
+	
+	            <li class="regMb30">
+	                <label><font>*</font> 固定电话：</label>
+	            <span class="regM defaultBorder">
+					<input id="cpytelphone" name="cpytelphone" class="regInput"  maxlength="13" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpytelphoneErr"></span>
+	            </li>
+	
+	
+	            <li class="regMb30">
+	                <label>手机：</label>
+	            <span class="regM defaultBorder">
+	            	<input id="cpymobile" name="cpymobile" class="regInput" maxlength="11" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpymobileErr"></span>
+	            </li>
+	
+	
+	            <li class="regMb18" style="margin-left:0px;">
+	                <label>邮箱：</label>
+	            <span class="regM defaultBorder">
+	            	<input id="cpyemail" name="cpyemail" class="regInput"  maxlength="80" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpyemailErr"></span>
+	            </li>
+	
+	
+	            <li class="regMb30">
+	                <label>所在部门：</label>
+	            <span class="regM ">
+	            	<select id="cpysection" name="cpysection" class="regSelect">
+	                    <option value="0">请选择所在部门</option>
+	                    <option value="1">市场部</option>
+	                    <option value="2">采购部</option>
+	                    <option value="3">行政部</option>
+	                    <option value="4">办公室</option>
+	                    <option value="5">其他</option>
+	                </select>
+	            </span>
+	                <span id="cpysectionErr"></span>
+	            </li>
+	
+	
+	            <li class="accountTitle "> 公司信息 </li>
+	
+	
+	            <li class="regMb30 regMt18">
+	                <label><font>*</font> 公司名称：</label>
+	            <span class="regM defaultBorder">
+	            	<input id="cpyname" name="cpyname" class="regInput" onblur="ckcpy_name();" onfocus="showcpytip('cpyname','cpynameErr',8);" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpynameErr"></span>
+	            </li>
+	
+	            <li class="regMb30">
+	                <label><font>*</font> 公司地址：</label>
+	            <span class="regM">
+	            	<select name="cpyprovince" id="cpyprovince" class="regSelect" onchange="ckcpy_province();">
+	                    <option value="0">请选择所在省份</option>
+	                    <option value="2">北京市</option><option value="3">安徽省</option><option value="4">福建省</option><option value="5">甘肃省</option><option value="6">广东省</option><option value="7">广西壮族自治区</option><option value="8">贵州省</option><option value="9">海南省</option><option value="10">河北省</option><option value="11">河南省</option><option value="12">黑龙江省</option><option value="13">湖北省</option><option value="14">湖南省</option><option value="15">吉林省</option><option value="16">江苏省</option><option value="17">江西省</option><option value="18">辽宁省</option><option value="19">内蒙古自治区</option><option value="20">宁夏回族自治区</option><option value="21">青海省</option><option value="22">山东省</option><option value="23">山西省</option><option value="24">陕西省</option><option value="25">上海市</option><option value="26">四川省</option><option value="27">天津市</option><option value="28">西藏自治区</option><option value="29">新疆维吾尔自治区</option><option value="30">云南省</option><option value="31">浙江省</option><option value="32">重庆市</option><option value="33">香港特别行政区</option><option value="34">澳门特别行政区</option><option value="35">台湾省</option>                </select>
+	            	<select id="cpycities" name="cpycities" class="regSelect" onchange="ckcpy_cities();">
+	                    <option value="0">请选择所在市</option>
+	                </select>
+	            </span>
+	
+	            </li>
+	            <li class="regMb30">
+	                <label>&nbsp;</label>
+				<span class="regM defaultBorder">
+					<input id="cpyaddress" name="cpyaddress" class="regInput" onblur="ckcpy_address();" onfocus="showcpytip('cpyaddress','cpyaddressErr',9);" type="text">
+					<em></em>
+	            </span>
+	                <span id="cpyaddressErr"></span>
+	            </li>
+	            <!--购买用途-->
+	            <li class="regMb30" style="height:70px;">
+	                <label><font>*</font> 购买用途：</label>
+	            <span class="regM">
+	            	<input name="cpybuyuse[]" value="1" type="checkbox"> 员工福利 &nbsp;&nbsp;
+	                <input name="cpybuyuse[]" value="2" type="checkbox"> 商务馈赠 &nbsp;&nbsp;
+	                <input name="cpybuyuse[]" value="3" type="checkbox"> 商务礼品 &nbsp;&nbsp;<br>
+	                <input name="cpybuyuse[]" value="4" type="checkbox"> 节日送礼 &nbsp;&nbsp;
+	                <input name="cpybuyuse[]" value="5" type="checkbox"> 会务庆典 &nbsp;&nbsp;
+	                <input name="cpybuyuse[]" value="6" type="checkbox"> 日采零需 &nbsp;&nbsp;
+	            </span>
+	                <span id="cpybuyuseErr"></span>
+	            </li>
+	
+	            <!--公司网址-->
+	            <li class="regMb30">
+	                <label>公司网址：</label>
+	            <span class="regM defaultBorder">
+					<input id="cpywebsite" name="cpywebsite" class="regInput"  type="text">
+	            </span>
+	                <span id="cpywebsiteErr"></span>
+	            </li>
+	
+	            <!--公司规模-->
+	            <li class="regMb30">
+	                <label>公司规模：</label>
+	            <span class="regM ">
+	            	<select name="cpyscale" id="cpyscale" class="regSelect">
+	                    <option value="0">请选择人数</option>
+	                    <option value="1">0-49人</option>
+	                    <option value="2">50-99人</option>
+	                    <option value="3">100-499人</option>
+	                    <option value="4">500-999人</option>
+	                    <option value="5">1000人以上</option>
+	                </select>
+	            </span>
+	                <span id="cpyscaleErr"></span>
+	            </li>
+	
+	            <!--公司行业-->
+	            <li class="regMb30">
+	                <label>公司行业：</label>
+	            <span class="regM ">
+	            	<select name="cpytrade" id="cpytrade" class="regSelect">
+	                    <option value="0">请选择行业</option>
+	                    <option value="1">金融/银行/投资/基金/证券/保险</option>
+	                    <option value="2">石油/石化/化工/电气/水利</option>
+	                    <option value="3">政府/公共事业/非盈利机构</option>
+	                    <option value="4">环保/农/林/牧/渔</option>
+	                    <option value="5">交通/运输/物流</option>
+	                    <option value="6">能源/矿产/采掘/冶炼</option>
+	                    <option value="7">房地产/建筑/建材/工程</option>
+	                    <option value="8">医药/医疗/器械/生物工程</option>
+	                    <option value="9">教育/培训/咨询/中介</option>
+	                    <option value="10">法律/财会/检验检测/认证</option>
+	                    <option value="11">航空/航天/学术/科研</option>
+	                    <option value="12">计算机/网络/IT/电子商务</option>
+	                    <option value="13">通讯/电子技术/仪器仪表</option>
+	                    <option value="14">媒体/出版/影视/文化/艺术</option>
+	                    <option value="15">广告/会展/公关/市场推广</option>
+	                    <option value="16">酒店/娱乐/体育/休闲</option>
+	                    <option value="17">印刷/包装/造纸</option>
+	                    <option value="18">贸易/进出口/批发</option>
+	                    <option value="19">加工制造/汽车/摩托车/配件</option>
+	                    <option value="20">大型设备/机电设备/重工业</option>
+	                    <option value="21">家居/物业/装饰装潢</option>
+	                    <option value="22">快速消费品（食品/饮料/烟酒/化妆品）</option>
+	                    <option value="23">耐用消费品（服装/纺织/皮革/家具家电）</option>
+	                    <option value="24">其他/跨领域经营</option>
+	                </select>
+	            </span>
+	                <span id="cpytradeErr"></span>
+	            </li>
+	
+	            <!--公司性质-->
+	            <li class="regMb30">
+	                <label>公司性质：</label>
+	            <span class="regM ">
+	            	<select name="cpynature" id="cpynature" class="regSelect">
+	                    <option value="0">请选择性质</option>
+	                    <option value="1">政府机关/事业单位</option>
+	                    <option value="2">国营</option>
+	                    <option value="3">私营</option>
+	                    <option value="4">外资</option>
+	                    <option value="5">中外合资</option>
+	                    <option value="6">其它</option>
+	                </select>
+	            </span>
+	                <span id="cpynatureErr"></span>
+	            </li>
+	
+	            <!--验证码 -->
+	            <li class="regMb30">
+	                <label><font>*</font> 验证码：</label>
+	                <input id="cpyauth_code" name="cpyauth_code" class="regCodeInput defaultBorder" type="text">
+	                <em></em>
+	                <img id="cpycode_img" src="images/img-registor/bg01.jpg" alt="看不清？点一下！" title="看不清？点一下！" class="floatleft regMl6" border="0" width="106" height="36">
+	                <span class="codeTitle floatleft regMl6">看不清？<a id="" href="javascript:void(0);" >换一换</a></span>
+	                <span id="cpyauth_codeErr"></span>
+	            </li>
+	
+	            <li class="regPl88">
+				<span class="regM " style="margin-left:12px">
+	        		<input id="cpyagree" name="cpyagree" value="1" checked=""  type="checkbox">
+					<a target="_blank" href="#" class="checkTitle">我已阅读并同意<font style="font-size:12px;">《顺丰优选用户注册协议》</font></a>
+				</span>
+	                <span id="cpyagreeErr"></span>
+	            </li>
+	            <li class="register regPl88 regMt10" style="margin-left:12px">
+	     
+	                <a href="javascript:void(0);" class="registerNow regdisabled" disabled="">维护中，暂停注册</a>
+	            </li>
+	            <br><br><br><br>
+	        </form>
+	    
+			</ul>
+		</div>
+		<!--footer-->
+		<div class="footer">
+			
+			<span>
+				<a href="#" class="footerlink1">关于我们</a> | 
+				<a href="#" class="footerlink1">联系我们</a> | 
+				<a href="#" class="footerlink1">招聘人才</a> | 
+				<a href="#" class="footerlink1">友情链接</a> | 
+				<a href="#" class="footerlink1">供应商申请</a>
+			</span>
+			<p> 
+				北京顺丰电子商务有限公司<br>
+				北京市公安局顺义分局备案11011302000890号|<a href="#" target="_blank" class="footerlink1">京ICP备12011349号</a>|<a href="#" target="_blank" class="footerlink1">企业营业执照</a><br>
+				Copyright© 顺丰优选 sfbest.com 版权所有<br> 
+			</p>
+		
+		</div>
+	</body>
+	<script src="js/zhuce.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/myCookie.js"></script>
+</html>

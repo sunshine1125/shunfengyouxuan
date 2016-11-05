@@ -1,0 +1,96 @@
+div,body,html,h1,h2,h3,h4,h5,h6,p,a,em,font,img,strong,b,dl,dt,dd,form,label,ol,ul,li,legend,span,input{margin:0;padding:0;}
+body{color:#666;font:12px/150% Arial,Verdana,"宋体";}
+ol li,ul li{list-style:none;}
+a{text-decoration: none;color:#515151;}
+input{outline: none;}
+ul li{list-style-image: none;list-style-position:outside ;}
+
+html{background:#F5F5F5 none repeat scroll 0 0;color:#515151;overflow-y: scroll;}
+body,div,td{font-size:12px;line-height: 1.4em;}
+.header{width:1000px;margin:0 auto;}
+.header img,.header span{margin:10px 0;float:left;}
+.header span{line-height: 70px;font-size:24px;padding-left: 3px;font-family: "微软雅黑";}
+
+.clear{clear: both;line-heigth:0;height: 0;font-size: 0;}
+.tabBox{width:666px;margin:0 auto;padding-left:333px;height: 37px;}
+.regMr5{margin-right: 5px;}
+.tabBox span{display: block;float:left;text-align: center;}
+.tabBox .reg_show,.tabBox .reg_hide{cursor: pointer;position: relative;top:1px;width:163px;height: 38px;line-height: 38px;font-family: "微软雅黑";}
+.tabBox .reg_hide{background: url(../images/img-registor/tabbg1.jpg) no-repeat left top;font-size: 14px;}
+.tabBox .reg_show{background: url(../images/img-registor/tabbg.jpg) no-repeat left top;font-size:16px;}
+.tabBox .login{width:130px;float:right;padding-top:14px;font-size:12px;color: #565656;}
+.tabBox .login a{color:#6e9b0c;}
+
+.reg_main{width:960px;height: auto !important;min-height: 490px;background: #fff;margin:0 auto;}
+.reg_main{padding: 45px 0 0 40px;}
+.reg_border{border-top:1px solid #d6d5d5;}
+.reg_main ul{position: relative;left:0;top:0;}
+.reg_main .individualUserBg{width:960px;height:406.6px;background:url(../images/img-registor/pic2.jpg) no-repeat right 78px;}
+
+.regMb30{margin-bottom: 30px;}
+.reg_main ul.individualUserBg li,.reg_main ul.individualUserBg1 li,.reg_main ul.enterpriseUsers li{height:38px;}
+.reg_main .defaultBorder,.loginreg_main .defaultBorder,.reg_findPassword .defaultBorder{border: 1px solid #cdcdcd;}
+.reg_main li label,.reg_main li .regM,.reg_main li .reg_error,.reg_main li .reg_error1,.reg_main li .reg_error3,.reg_main li .reg_error4{display: block;float:left;}
+.reg_main li label{width:118px;font-size: 14px;color:#515151;height: 38px;line-height: 38px;text-align: right;}
+.reg_main li label font{color: #ff4800;}
+.reg_main li .regM{width:268px;height:36px;line-height: 36px;}
+.reg_main li .regInput{width:228px;height: 36px;line-height: 36px;border: 0;outline: none;color:#515151;padding:0 5px;}
+input,textarea,select,button{font-family: "微软雅黑";font-size:12px;font-weight: inherit;vertical-align: middle;}
+.reg_main li .regInput{width:228px;height: 36px;line-height: 36px;border:0;color:#515151;padding: 0 5px;}
+.reg_main li .regM .regOk,.reg_findPassword .regOk2,.reg_main li .regM .regInput,.loginreg_main .loginreg_m .regInput{display: block;float:left;}
+address,caption,cite,code,dfn,em,th,var{font-style: normal;font-weight: normal;}
+
+.regPl191{padding-left:191px;}
+.reg_main .safetyLayer{color: #666;padding-top: 5px;height: 28px;}
+.reg_main ul.individualUaerBg li,.reg_main ul.individualUaerBg li,.reg_main ul.enterpriseUsers li{height:38px;}
+.reg_main .safetyLayer font,.reg_main .safetyLayer em,.reg_main .safetyLayer a,.reg_findPassword .safetyLayer font,.reg_findPassword .safetyLayer em,.reg_findPassword .safetyLayer a{display: block;float:left;}
+.reg_main .safetyLayer em,.reg_findPassword .safetyLayer em{text-align: center;width:34px;margin-right:2px;color:#fff;}
+.reg_main .safetyLayer em.default,.reg_findPassword .safetyLayer em.default{background:#c4c4c4;}
+.regMb30{margin-bottom:30px;}
+.reg_main li .regCodeInput{float:left;padding:0 5px;width:58px;height:36px;}
+.floatleft{float:left;}
+.regMl6{margin-left:6px;}
+.reg_main li .codeTitle,.reg_main li .checkTitle{color:#565656;}
+.reg_main li .codeTitle{width:86px;line-height:36px;}
+.reg_main li .codeTitle a,.reg_main li .checkTitle font,.loginreg_main li .checkTitle font,.reg_main li .reg_error a{color:#6e9b0c;}
+.reg_main li .reg_error,.reg_main li .reg_error1,.reg_main li .reg_error2,.reg_main li .reg_error3{width:230px;padding-left:15px;padding:0 10px 0 15px;}
+.reg_main li .reg_error{color:#ff4800;}
+.reg_main .regInvitationInput{width:138px;height:34px;line-height:34px;padding:0 5px;}
+.reg_main a.regInvitationLink{color:#6e9b0c;padding-left:8px;}
+
+.regPl88{padding-left:88px;}
+input[type="radio"],input[type="checkbox"]{vertical-align: middle;}
+.regMt10{margin-top:10px;}
+.reg_main .registerNow,.reg_main a.regShopping{display: block;float: left;margin-right: 20px;line-height:38px;}
+.reg_main .registerNow{display: block;float: left;width:271px;height:38px;background:url(../images/img-registor/reg_btn.jpg) no-repeat left top;font-size:16px;text-align: center;color: #fff;}
+.ui-reg-tip{padding:15px 10px 10px 45px;border-top:1px dotted #dcdcdc;position: relative;left:-30px;width:930px;background:url(../images/img-registor/reg_tip.png) no-repeat 25px 16px;}
+.ui-reg-tip a:link,.ui-reg-tip a:visited,.ui-reg-tip a:hover{color:#669900;}
+
+.reg_main li .regM .regOk,.reg_main li .regOk1,.reg_form .regOk1{background:url(../images/img-registor/icon4.jpg) no-repeat center;width:23px;height:26px;}
+.reg_main .okBorder,.loginreg_main .okBorder,.reg_findPassword .okBorder{border:1px solid #6e9b0c;}
+.reg_main li .reg_error1,.reg_main li .reg_error2{color:#666;}
+.reg_main .errorBorder,.loginreg_main .errorBorder,.reg_findPassword .errorBorder{border:1px solid #ff4800;}
+.reg_main li .reg_error{color:#ff4800;}
+.reg_main li label font.f_0,.reg_main li .regM font.f_0,.reg_main li .reg_error font.f_0,.reg_main li .reg_error1 font.f_0,.reg_main li .reg_error3 font.f_0,.reg_main li .reg_error4 font.f_0{line-height:36px;}
+.reg_main li .reg_error2{display: block;float:left;height:36px;}
+.reg_main .safetyLayer em.ok,.reg_findPassword .safetyLayer em.ok{background:#f79100;}
+.reg_main li .regOk1,.reg_form .regOk1{display: block;height:36px;position: absolute;left:158px;float: left;}
+
+.reg_main .accountTitle{ width:556px; height:34px; line-height:34px; padding-left:8px; font-size:14px; font-weight:bold; border-bottom:1px dashed #d5d5d5;}
+.reg_main .enterpriseUsers li{ position: relative;}
+.reg_main .enterpriseUsers li label{ width:100px; font-size:14px; color:#515151; height:38px; line-height:38px; text-align:right;}
+.reg_main .reg_error3{ position: absolute; right: -35px;}/* background:#f7f7f7; border:1px solid #e3e3e3;*/
+.regMt18{margin-top:18px;}
+.reg_main .enterpriseUsers li{position: relative;}
+.reg_main .enterpriseUsers li label{width:100px;font-size:14px;color:#515151;height:38px;text-align: right;}
+.reg_main .regdisabled{background:#ccc;border-radius: 2px;cursor:default;}
+
+
+.footer{ width:1000px; margin:0 auto; padding-top:20px;}
+.footer span, .footer p{ line-height:26px; margin:0 auto; text-align:center;}
+.footer span{ display:block; color:#176246;}
+.footer span a.footerlink{ color:#176246;}
+.footer span a.footerlink:hover{ text-decoration:underline;}
+.footer span a.footerlink1{ color:#666; text-decoration:none;}
+.footer span a.footerlink1:hover{ text-decoration:underline;}
+.footer p{ line-height:26px;}
